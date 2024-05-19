@@ -1,0 +1,84 @@
+@charset "utf-8";
+html{
+    font-size: 100%;
+}
+li{
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+    /* margin:0 50px; */
+    padding-left: 2px;
+    border-left: 1px solid rgb(206, 204, 204);
+    text-align: center;
+    
+
+    /* flex:1にする事でflexアイテムの個数に限らず均等幅になる */
+    /* 
+    親要素に displey:table; table-layout: fixed;
+    子要素に display: table-cell;
+    →li要素幅の大きさが同じ大きさになる。
+
+    vertical-align:middle;
+    →行中のテキストや画像を中央ぞろえにする
+    */
+}
+li:first-child{
+    margin: 0px;
+}
+li:hover{
+    background-color: rgb(206, 204, 204);
+    transition: 0.7s;
+    cursor: pointer;
+
+}
+.header{
+    /* display: flex; */
+
+}
+.header-left{
+width: 15%;
+}
+.top-icon{
+    width: 100px;
+}
+.header-right{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+
+.header-wrapper{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+
+    /* flex-direction:row ; */
+}
+.main-text{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top:120px;
+    left:47%;
+
+    font-size:30px;
+    color:white;
+    padding:0;
+    margin:0;
+    /* positionを使う際は親子を同じタグ内に入れる */
+
+}
+.imgs{
+
+    position: relative;
+}
+.main-img{
+    margin-top: 15px;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+}
