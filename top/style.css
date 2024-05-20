@@ -69,8 +69,8 @@ width: 15%;
     /* flex-direction:row ; */
 }
 .main-text{
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
+    /* -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl; */
     position: absolute;
     top:100px;
     left:47%;
