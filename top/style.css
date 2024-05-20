@@ -31,6 +31,16 @@ li:hover{
     cursor: pointer;
 
 }
+a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    border: 1px solid white;
+    top:430px;
+    left:44%;
+    padding: 10px 25px;
+    font-size: 10px;
+}
 .header{
     /* display: flex; */
 
@@ -62,13 +72,14 @@ width: 15%;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     position: absolute;
-    top:150px;
+    top:100px;
     left:47%;
 
     font-size:30px;
-    color:white;
+    color:black;
     padding:0;
     margin:0;
+
     /* positionを使う際は親子を同じタグ内に入れる */
 
 }
