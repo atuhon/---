@@ -10,6 +10,8 @@ li{
     padding-left: 2px;
     border-left: 1px solid rgb(206, 204, 204);
     text-align: center;
+
+
     
 
     /* flex:1にする事でflexアイテムの個数に限らず均等幅になる */
@@ -34,11 +36,13 @@ li:hover{
 li a{
     text-decoration: none;
     color: black;
-}
-.header{
-    /* display: flex; */
+    width: 100%;
+    display: block;
+    /* block要素にすることで親要素全体の幅にリンク範囲が広がる */
+
 
 }
+
 .header-left{
 width: 15%;
 }
@@ -50,6 +54,8 @@ width: 15%;
     width: 100%;
     align-items: center;
     justify-content: center;
+
+
 
     }
 
