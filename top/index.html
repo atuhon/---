@@ -7,40 +7,50 @@
     <title>伊豆旅</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   
   </head>
   <body>
     <header>
-    
-        <div class="header-left">
-          <img src="./img/伊豆旅.png" alt="" class="top-icon" />
-        </div>
-        
-        <div class="header-right">
-          <ul class="header-wrapper">
+      <div class="header-left">
+        <img src="./img/伊豆旅.png" alt="" class="top-icon" />
+      </div>
 
-            
-            <li><a href="#">特集</a></li>
-            <li><a href="#">モデルコース</a></li>
-            <li><a href="#">アクセス</a></li>
-            <li><a href="#">サイトマップ</a></li>
-          </ul>
-        </div>
-    
+      <div class="header-right">
+        <ul class="header-wrapper">
+          <li><a href="#">特集</a></li>
+          <li><a href="#">モデルコース</a></li>
+          <li><a href="#">アクセス</a></li>
+          <li><a href="#">サイトマップ</a></li>
+        </ul>
+      </div>
     </header>
     <main>
+      <div class="imgs">
+        <div class="main-text" style="font-family: serif">伊豆を旅する</div>
+        <div class="main-img swiper">
 
-        <div class="imgs">
-            <div class="main-text" style="font-family:serif">
-                伊豆を旅する
-            </div>
-            <img src="./img/main.jpg" alt="" class="main-img">
-            <!-- スライダーにする -->
-            <div class="button">
-              <a class="trip" href="#">旅を見つける</a>
-              <!-- 画面内に入った際に表示＆点滅 -->
-            </div>
+          <swiper-container speed="1500" loop="true" navigation="true"autoplay-delay="2500">
+            <swiper-slide><img src="./img/main.jpg" alt="" class="main" /></swiper-slide>
+            <swiper-slide><img src="./img/2022-05-07 13.24.44.jpg" alt="" class="main" /></swiper-slide>
+            <swiper-slide><img src="./img/2022-05-07 13.35.49.jpg" alt="" class="main" /></swiper-slide>
+            <swiper-slide><img src="./img/2022-05-07 15.07.01.jpg" alt="" class="main" /></swiper-slide>
+
+          </swiper-container>
+
+
         </div>
- 
+        <!-- スライダーにする -->
+        <div class="button">
+          <a class="trip" href="#">旅を見つける</a>
+          <!-- 画面内に入った際に表示＆点滅 -->
+        </div>
+      </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script src="./js/swiper.js"></script>
   </body>
+
+  
 </html>
