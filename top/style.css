@@ -86,7 +86,7 @@ font-size: 12px;
     writing-mode: vertical-rl;
     position: absolute;
     top:70px;
-    left:47%;
+    left:50%;
 
     font-size:30px;
     color:black;
@@ -127,7 +127,7 @@ font-size: 12px;
     position: absolute;
     border: 1px solid white;
     top:80%;
-    left:43.5%;
+    left:47%;
     padding: 10px 25px;
     font-size: 10px;
     /* opacity: 0;
