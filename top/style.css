@@ -32,7 +32,9 @@ li:hover{
     transition: 0.7s;
     cursor: pointer;
 
+
 }
+
 li a{
     text-decoration: none;
     color: black;
@@ -44,10 +46,18 @@ li a{
 }
 
 .header-left{
-width: 15%;
+display: flex;
+
 }
+.header-left div{
+    display: flex;
+justify-content: center;
+align-items: center;
+font-size: 10px;
+
+    }
 .top-icon{
-    width: 100px;
+    width: 130px;
 }
 .header-right{
     display: flex;
@@ -56,6 +66,7 @@ width: 15%;
     justify-content: center;
 
     }
+
 
 
 .header-wrapper{
@@ -77,25 +88,32 @@ width: 15%;
     color:black;
     padding:0;
     margin:0;
+    cursor: default;
+
 
     /* positionを使う際は親子を同じタグ内に入れる */
 
 }
 .imgs{
+    width: 100%;
+    height: 100vh;
 
     position: relative;
 }
-.main-img{
+.swip{
+    height: 100vh;
+    /* swiper.jsの高さも設定すると画像と大きさが一致する。 */
+
+}
+.main-imgs{
     z-index: 1;
     margin-top: 15px;
-    width: 100%;
-    height:100vh;
-    object-fit: cover;
 }
-.main{
+.main-img{
     object-fit: cover;
     width: 100%;
     height:100vh;
+    opacity: 0.7;
      
 }
 .trip{
@@ -104,10 +122,25 @@ width: 15%;
     color: white;
     position: absolute;
     border: 1px solid white;
-    top:350px;
-    left:44%;
+    top:80%;
+    left:43.5%;
     padding: 10px 25px;
     font-size: 10px;
-
-    
+    /* opacity: 0;
+    transform: translate(0,100px);
+    transition:  all 1s; */
 }
+.trip .active{
+    opacity: 1;
+    transform: translate(0,0);
+
+}
+@keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
