@@ -43,7 +43,7 @@ li a{
     text-decoration: none;
     color: black;
     width: 100%;
-    display: block;
+    /* display: block; */
     /* block要素にすることで親要素全体の幅にリンク範囲が広がる */
 
 

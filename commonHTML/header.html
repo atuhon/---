@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../commonCSS/headerStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+          <img src="../../img/伊豆旅ロゴ.png" alt="" class="top-icon" />
+          <div  style="font-family: serif">「自然」「食」「アクティビティ」から伊豆を満喫したいサイト</div>
+        </div>
+      
+        <div class="header-right">
+          <ul class="header-wrapper">
+            <li class="header-list"><a class="header-a"  href="#">特集</a></li>
+            <li class="header-list"><a class="header-a"  href="#">モデルコース</a></li>
+            <li class="header-list"><a class="header-a"  href="#">アクセス</a></li>
+            <li class="header-list"><a class="header-a" href="#">サイトマップ</a></li>
+            <!-- class名を設定する
+             -->
+      
+          </ul>
+        </div>
+      </header> 
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(".header-a").on("click",function(){
+                $(this).css("color","red");
+            });
+        })
+    </script>
+</body>
+</html>
