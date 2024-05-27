@@ -1,0 +1,35 @@
+html{
+    font-family: sans-serif,Verdana, Geneva, Tahoma ;
+        
+    }
+    .main-li{
+        list-style: none;
+        width: calc(100%/3);
+        padding: 10px;
+        text-align: center;
+    
+    }
+    .main-li:last-child{
+        font-size: 14px;
+    }
+    .main-li-a{
+    
+        text-decoration: none;
+        color: black;
+    }
+    .main-top{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(137, 130, 130);
+        width: 50%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    
+    }

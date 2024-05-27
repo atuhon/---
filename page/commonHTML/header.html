@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../commonCSS/headerStyle.css">
+    <link rel="stylesheet" href="../commonHTML/headerStyle.css">
     <title>Document</title>
+
 </head>
 <body>
     <header>
@@ -15,24 +16,36 @@
       
         <div class="header-right">
           <ul class="header-wrapper">
+ 
             <li class="header-list"><a class="header-a"  href="#">特集</a></li>
-            <li class="header-list"><a class="header-a"  href="#">モデルコース</a></li>
+            <li class="header-list"><a class="header-a"  href="../course/course.html" target="_blank">モデルコース</a></li>
             <li class="header-list"><a class="header-a"  href="#">アクセス</a></li>
-            <li class="header-list"><a class="header-a" href="#">サイトマップ</a></li>
-            <!-- class名を設定する
-             -->
-      
+            <li class="header-list"><a class="header-a"  href="#">サイトマップ</a></li>
+            <!-- target→リンク送信時に使われる属性の１つ
+            targetを設定しないとiframe内で表示しようとしてしまう
+             target="_top"→最上位の親フレームで表示する。
+             target="_blank"→別タブで表示する、外部リンクや参考資料リンクで使用する
+            -->
+
+
+    
           </ul>
         </div>
       </header> 
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
         $(function(){
-            $(".header-a").on("click",function(){
+            $(".header-a").on("mouseover",function(){
                 $(this).css("color","red");
             });
         })
-    </script>
+        $(function(){
+            $(".header-a").on("mouseout",function(){
+                $(this).css("color","");
+            });
+        })
+
+    </script> -->
 </body>
 </html>

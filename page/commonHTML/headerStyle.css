@@ -36,24 +36,40 @@ body{
     border-right: 1px solid rgb(206, 204, 204);
 }
 
-.header-list:hover{
+/* .header-list:hover{
     background-color: rgb(206, 204, 204);
     transition: 0.7s;
     cursor: pointer;
 
 
-}
+} */
 
 .header-a{
+    display: block;
+    position: relative;
     text-decoration: none;
     color: black;
     width: 100%;
+    padding-bottom: 3px;
+
+
     /* display: block; */
     /* block要素にすることで親要素全体の幅にリンク範囲が広がる */
 
 
 }
-img{
+
+.header-a:after{
+	content: '';
+	width: 0%;
+	transition: all 0.8s ease;
+	border-bottom: 3px solid #000;
+	display: block;
+
+}
+.header-a:hover:after{
+	width: 100%;
+	border-bottom: 3px solid #000;
 
 }
 .header-left{
